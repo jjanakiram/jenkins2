@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        echo 'i love devops'
+        build(job: 'job1', quietPeriod: 5)
       }
     }
 
